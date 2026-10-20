@@ -1,0 +1,139 @@
+# ============================================================================
+# RETRACTED - DO NOT QUOTE ANY NUMBER IN THIS FILE AS A RESULT.
+#
+# This RMSD series was computed with `gmx rms` referenced to a .gro file
+# (see the "Command line:" header below). Without a run input (.tpr) GROMACS
+# cannot make molecules whole across periodic boundaries, so what is plotted
+# here is largely periodic-image displacement, not conformational change.
+# It is also from the 100 ps check run, not a production trajectory.
+#
+# The 10.11 A and 14.30 A RMSD figures that came out of this family of check
+# runs are WITHDRAWN. Changing only the reference .gro moved the "result" by
+# about 14 A, which is what identified the quantity as a PBC artefact: a
+# protein that had genuinely moved 24 A would be unfolded, and the hydrogen
+# bond, DSSP and radius-of-gyration data flatly contradict that.
+#
+# These files are kept, labelled, so the correction stays visible rather than
+# disappearing. The correct System B backbone RMSD is in
+# ../system_B/reduced_bb_rmsd.xvg (production trajectory, .tpr-referenced,
+# PBC-corrected). See ../../docs/RETRACTIONS.md.
+# ============================================================================
+# This file was created Wed Aug 19 00:46:34 2026
+# Created by:
+#                 :-) GROMACS - gmx rms, 2026.3-conda_forge (-:
+# 
+# Executable:   <CONDA_PREFIX>/envs/scye_md_cuda/bin.AVX2_256/gmx
+# Data prefix:  <CONDA_PREFIX>/envs/scye_md_cuda
+# Working dir:  <WORKDIR>/comparison/reduced
+# Command line:
+#   gmx rms -s reduced_solv_minimized.gro -f reduced_md_unrestrained.xtc -o unrestrained_rmsd.xvg -tu ns
+# gmx rms is part of G R O M A C S:
+#
+# Gravel Rubs Often Many Awfully Cauterized Sores
+#
+@    title "RMSD"
+@    xaxis  label "Time (ns)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "Backbone after lsq fit to Backbone"
+   0.0000000    0.0226893
+   0.0010000    0.6623909
+   0.0020000    0.7486404
+   0.0030000    0.6388123
+   0.0040000    0.6372706
+   0.0050000    0.8305773
+   0.0060000    0.9630243
+   0.0070000    1.0241215
+   0.0080000    1.2454020
+   0.0090000    1.2584122
+   0.0100000    1.4202328
+   0.0110000    1.4160184
+   0.0120000    1.4217502
+   0.0130000    1.4192373
+   0.0140000    1.3750870
+   0.0150000    1.3712885
+   0.0160000    1.3728263
+   0.0170000    1.3698975
+   0.0180000    1.3784382
+   0.0190000    1.4304222
+   0.0200000    1.3914571
+   0.0210000    1.3958877
+   0.0220000    1.3875244
+   0.0230000    1.3372928
+   0.0240000    1.3009608
+   0.0250000    1.3008686
+   0.0260000    1.2534125
+   0.0270000    1.0921943
+   0.0280000    1.0999949
+   0.0290000    1.1564634
+   0.0300000    1.0403017
+   0.0310000    1.1100687
+   0.0320000    0.9679421
+   0.0330000    1.1517931
+   0.0340000    1.0416576
+   0.0350000    1.0414352
+   0.0360000    0.9672239
+   0.0370000    0.9689605
+   0.0380000    1.0418712
+   0.0390000    0.9674309
+   0.0400000    0.9676607
+   0.0410000    1.0970786
+   0.0420000    1.1535628
+   0.0430000    1.1486769
+   0.0440000    0.9706972
+   0.0450000    0.9046668
+   0.0460000    0.9033581
+   0.0470000    0.9834597
+   0.0480000    0.9012462
+   0.0490000    0.8286902
+   0.0500000    0.8276027
+   0.0510000    0.8287712
+   0.0520000    0.8290855
+   0.0530000    0.9004986
+   0.0540000    0.9823174
+   0.0550000    1.0442450
+   0.0560000    0.9003710
+   0.0570000    0.8279617
+   0.0580000    0.9025118
+   0.0590000    0.9034054
+   0.0600000    0.9028291
+   0.0610000    0.8296281
+   0.0620000    0.8302966
+   0.0630000    0.8298453
+   0.0640000    0.9040397
+   0.0650000    0.9028070
+   0.0660000    0.8299269
+   0.0670000    0.9033356
+   0.0680000    0.9028886
+   0.0690000    0.9016631
+   0.0700000    0.9682897
+   0.0710000    0.9698476
+   0.0720000    0.9680482
+   0.0730000    0.9694136
+   0.0740000    0.9671344
+   0.0750000    0.9692715
+   0.0760000    0.9710121
+   0.0770000    0.9669930
+   0.0780000    0.9622667
+   0.0790000    0.9659182
+   0.0800000    0.9631463
+   0.0810000    0.9673877
+   0.0820000    0.9622978
+   0.0830000    0.9620780
+   0.0840000    0.9674442
+   0.0850000    0.8996447
+   0.0860000    0.9663953
+   0.0870000    0.9660005
+   0.0880000    0.9651275
+   0.0890000    0.9590509
+   0.0900000    0.9667991
+   0.0910000    0.8978009
+   0.0920000    0.9652806
+   0.0930000    0.9650232
+   0.0940000    0.9663811
+   0.0950000    0.8988681
+   0.0960000    0.9605181
+   0.0970000    0.9622825
+   0.0980000    0.8926818
+   0.0990000    0.8956345
+   0.1000000    0.8996762
